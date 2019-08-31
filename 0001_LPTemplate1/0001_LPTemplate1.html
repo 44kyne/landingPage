@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script async src="外部ファイルを取り込む場合はここ"></script>
+  <script type="text/javascript">
+    //javascriptを直接書く場合はここ
+  </script>
+  <title>ウィンドウタイトル</title>
+  <style>
+    /* cssを直接書く場合はここ */
+
+    /* bodyタグのデザイン　フォントファミリーの設定 */
+    body {
+      font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+      max-width: 1000px;
+    }
+
+    /* imgタグのデザイン　画像サイズ最大値の設定 */
+    img {
+      /* max-width: 50%; */
+      width: 400px;
+    }
+
+    /* headerタグのデザイン */
+    header {
+      text-align: center; /* 中央揃え */
+    }
+
+    /* footerタグのデザイン */
+    footer {
+      text-align: center; /* 中央揃え */
+    }
+
+    /* h1タグのデザイン */
+    h1 {
+      color: black; font-weight: bold; font-size: 36px;
+      background-color; white;
+    }
+
+    /* h2タグのデザイン */
+    h2 {
+      color: black; font-weight: bold; font-size: 24px;
+      background-color; white;
+      text-align: center; /* 中央揃え */
+    }
+
+    /* figcaptionタグのデザイン */
+    figcaption {
+      font-size: 12px;
+    }
+
+    /* formタグのデザイン */
+    form {
+      max-width: 900px;
+      margin: 0 auto; /* 中央揃え */
+    }
+
+    /* centeringクラスのデザイン */
+    .centering {
+      text-align: center; /* 中央揃え */
+    }
+
+    /* red-reverseクラスのデザイン */
+    .red-reverse {
+      color: white; background-color: red;
+    }
+
+    /* yellow-futoタグのデザイン */
+    .yellow-futo {
+      background:linear-gradient(transparent 65%, yellow 65%);
+    }
+
+    /* cv-contentsタグのデザイン */
+    .cv-contents {
+      margin: 0 auto; /* 中央揃え */
+      max-width: 900px;
+      border: 1px dashed gray; /* 1px幅の点線をグレー色で囲む */
+      border-radius: 10px; /* 角を丸くする */
+      line-height: 36px;
+
+      text-align: left;
+    }
+
+    /* cv-contents figure leftタグのデザイン */
+    .cv-contents figure.left {
+      float: left;
+    }
+
+    /* cv-contents figure rightタグのデザイン */
+    .cv-contents figure.right {
+      float: right;
+    }
+
+    /* cleafix afterタグのデザイン */
+    .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* p serviceタグのデザイン */
+    p.service {
+      max-width: 900px;
+      margin: 0 auto; /* 中央揃え */
+    }
+
+
+    /* マウスが乗った時の疑似クラス */
+    a:hover {
+      background-color: darkblue;
+      color: white;
+    }
+
+
+    /* マウスが離れた時の疑似クラス */
+    a:active {
+    background-color: skyblue;
+    color: white;
+    }
+
+    /* リンクを揺らすためのクラス */
+    a {
+      margin: 0 auto; /* 中央揃え */
+      background-color: blue; color: white; font-size: 20px;
+      text-align: center; border-radius: 5px;
+      text-decoration: none; max-width: 300px;
+      display:block;
+      animation: prunprun 2.2s ease-in infinite;
+      -webkit-animation: prunprun 2.2s ease-in infinite;
+      -moz-animation: prunprun 2.2s ease-in infinite;
+      -o-animation: prunprun 2.2s ease-in infinite;
+      -ms-animation: prunprun 2.2s ease-in infinite;
+    }
+
+    /* マウスを揺らす用のアニメーションクラス */
+    @keyframes prunprun {
+    48%, 62% {transform: scale(1.0, 1.0);}
+    50% {transform: scale(1.1, 0.9);}
+    56% {transform: scale(0.9, 1.1) translate(0, -5px);}
+    59% {transform: scale(1.0, 1.0) translate(0, -3px);}
+    }
+
+    /* マウスを揺らす用のアニメーションクラス */
+    @-webkit-keyframes prunprun{
+    48%, 62% {-webkit-transform: scale(1.0, 1.0);}
+    50% {-webkit-transform: scale(1.1, 0.9);}
+    56% {-webkit-transform: scale(0.9, 1.1) translate(0, -5px);}
+    59% {-webkit-transform: scale(1.0, 1.0) translate(0, -3px);}
+    }
+
+    /* スマホ画面の場合 */
+    @media screen and (max-width:600px) {
+
+      body {
+        font-size: 1.6vw;
+      }
+
+      h1 {
+        font-size: 3.6vw;
+      }
+
+      h2 {
+        font-size: 2.4vw;
+      }
+
+      figcaption {
+        font-size: 1.2vw;
+      }
+
+      .cv-contents figure.left {
+        float: none;
+      }
+
+      .cv-contents figure.right {
+        float: none;
+      }
+
+      a {
+        font-size: 5.0vw;
+      }
+
+    }
+
+
+  </style>
+
+
+</head>
+<body>
+  <header>
+    <h1>ワイヤレスイヤホンで快適な生活を！</h1>
+    <figure class="left">
+      <img src="img/earphone1.jpg" alt="イヤホンの装着イメージ">
+      <figcaption>ワイヤレスイヤホンで快適な生活を！</figcaption>
+    </figure>
+
+    <p><a href="#cta">今すぐ申し込む</a></P>
+
+    <p><strong>商品説明</strong>
+
+    <strong><span class="yellow-futo">イエローマーカー</span></strong><br>
+    <small>小さい文字</small></P>
+  </header>
+
+  <main>
+
+  <div class="cv-contents">
+    <figure class="left">
+      <img src="img/earphone2.jpg" alt="イヤホンの装着イメージ">
+      <figcaption>有線のイヤホンはごちゃごちゃする</figcaption>
+    </figure>
+    <p class="clearfix">
+      <strong><span class="red-reverse">有線のイヤホンはごちゃごちゃする</span></strong><br><br>
+      有線のイヤホンだと線がからまって大変です。<br><br>
+    </p>
+  </div>
+
+  <div class="cv-contents">
+    <figure class="right">
+      <img src="img/earphone3.jpg" alt="お客様の声">
+    </figure>
+    <p class="clearfix">
+      <strong><span class="red-reverse">お客様の声</span></strong><br><br>
+      <br><br>
+      <small>※結果には個人差があり、全ての方が同様の結果になるとは限りません。</small>
+    </p>
+  </div>
+
+  <div>
+    <h2>サービスと料金</h2>
+    <figure class="centering">
+      <img src="" alt="サービスと料金">
+    </figure>
+    <p class="service">
+      <strong>最上級</strong><br>
+      料金：60,000円（税別）
+    </p>
+    <p class="service">
+      <strong>ライト級</strong><br>
+      料金：10,000円（税別）
+    </p>
+
+    <p class="service">
+      <strong>■60日間返金保証</strong><br>
+
+    </p>
+
+
+  <p></p>
+
+  <div>
+    <p id="cta">
+      <!-- 申し込み先のリンク-->
+      <a target="_blanc" href="https://www.amazon.co.jp">＞お申し込みはこちら</a>
+    </p>
+  </div>
+  </div>
+  </main>
+  <footer>
+    <small>&copy;2019 44yos.</small>
+  </footer>
+</body>
+</html>
